@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "agent"
+version = "0.1.0"
+description = ""
+authors = ["Julius Stener <julius@withtime.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.7"
+uvicorn = "^0.34.0"
+langchain = "^0.3.16"
+langchain-openai = "^0.3.2"
+langgraph = "^0.2.68"
+langchain-anthropic = "^0.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
