@@ -5,10 +5,8 @@
 To get started, ensure that:
 
  - Docker CLI Tools are installed. This can be done by [installing Docker Desktop](https://docs.docker.com/get-started/docker_cheatsheet.pdf) or just the Docker CLI tools.
- - You have a [Pinecone](https://www.pinecone.io/) account and have setup a hybrid-search index with dimension 1536. [Here](https://www.pinecone.io/learn/hybrid-search-intro/) is a helpful article if you are new to hybrid search indexes.
- - You have  Supabase account and have setup the appropriate tables.
 
-Next, you'll need to create the environment variables file, `development.env` in `synthetic_manger/server/`. To get started, create a copy of or rename `synthetic_manager/server/.env.example` to `synthetic_manager/server/development.env` and uncomment all variables that begin with `# -> `. Add the appropriate API keys for each environment variables. For example, `# -> OPENAI_API_KEY=''` should become `OPENAI_API_KEY='your_key'`.
+Next, you'll need to create the environment variables file, `.env` in `agent/`. To get started, create a copy of or rename `agent/.env.example` to `agent/.env` and input all variables you plan to use. Add the appropriate API keys for each environment variables. For example, `# -> OPENAI_API_KEY=''` should become `OPENAI_API_KEY='your_key'`.
 
 Finally, from the root directory, use the Docker Compose file to build and start the Docker Containers.
 
